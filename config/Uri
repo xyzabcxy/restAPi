@@ -1,0 +1,19 @@
+class Uri{
+
+     constructor(featureN){
+         this.uribase = 'https://todo.ly/api/';
+            this.feature = featureN;
+     }
+
+     get allUri(){
+         return this.uribase + this.feature;
+     }
+
+
+     set setFeature(newFeature){
+         this.feature = newFeature;
+
+     }
+}
+
+module.exports = Uri;
